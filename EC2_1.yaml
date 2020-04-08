@@ -1,0 +1,15 @@
+- name: ec2 launcher
+  hosts: localhost
+  connection: local
+  tasks:
+  - name: launch ec2
+    ec2:
+      instance_type: t2.micro
+      key_name: Shashi-windows
+      image: ami-0fc20dd1da406780b
+      region: us-east-2
+      group: default
+      count: 1
+      vpc_subnet_id: subnet-207a9e4b
+      wait: yes
+      assign_public_ip: yes

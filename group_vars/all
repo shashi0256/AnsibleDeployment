@@ -1,0 +1,6 @@
+region: us-east-2
+instance_type: t2.micro
+ami: ami-0fc20dd1da406780b  # Ubuntu 14.04 LTS
+app_code_user: "ubuntu" # remote user
+env: demo
+pem_key: Shashi-windows # key.pem
